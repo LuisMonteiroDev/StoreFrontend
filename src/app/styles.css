@@ -1,0 +1,19 @@
+/* .login {
+    padding-top: 3em;
+    background-color: #d42424;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #d42424;
+    border-radius: 3px;
+    box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+} */
+*{
+    padding: 3em;
+}
+.footer-text{
+    color: #000;
+    text-align: center;
+    align-items: center; 
+    padding-top: 3em;
+}
