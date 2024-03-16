@@ -1,54 +1,132 @@
+body{
+    margin: auto;
+    
+}
+
+#logomarca{
+    width: 130px;
+    height: 130px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+
+}
 .login-text {
-    color: #000;
+    margin: auto;
+    color: #FFFF;
     text-align: center;
     align-items: center; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #form-login {
-    background-color: #128625; /* Cor de fundo do formulário de login */
+    background-color: #424347; /* Cor de fundo do formulário de login */
     padding: 20px; /* Adiciona espaçamento interno */
     border-radius: 5px; /* Adiciona bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    box-shadow: 0px 0px 30px rgb(0, 0, 0); /* Adiciona sombra */
     margin: 0 auto; /* Centraliza horizontalmente */
-    padding-top: 3em;
-    width: 400px; /* Define a largura do formulário */
-    height: 300px;
+    padding-top: 2em;
+    width: 420px; /* Define a largura do formulário */
+    height: 470px;
 }
-
+.form-fields{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 390px;
+}
 .form-fields label {
-    color: #f0f0f0; 
+    color: #f0f0f0;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form-fields input[type="email"],
 .form-fields input[type="password"] {
+    margin: auto;
     background-color: #f0f0f0; /* Cor de fundo do campo de entrada */
     color: #000; /* Cor do texto dentro do campo de entrada */
     border: none; /* Remove a borda padrão */
-    padding: 8px; /* Espaçamento interno */
+    padding: 13px; /* Espaçamento interno */
     width: 100%; /* Largura total */
     box-sizing: border-box; /* Inclui padding e border na largura total */
-    border-radius: 5px; /* Borda arredondada */
+    border-radius: 20px; /* Borda arredondada */
     margin-top: 5px; /* Espaçamento superior */
+   
 }
-
-.button-login {
-    background-color: #fff;
-    color: black;
-    border: 2px solid #128625;
-    border-radius: 1em;
+.button-forgot-password{
+    background: none;
+    border: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
-    width: 130px;
+    width: 160px;
     height: 35px;
-    margin-top: 1em;
-    margin-left: 7em;
-    text-align: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
     transition-duration: 0.5ms;
+  
 }
+.button-login {
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    --color: #10b901;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    width: 6em;
+    height: 2.6em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 30px;
+    position: relative;
+    a{
+        color: #f0f0f0;
+        text-decoration-line: none;
+    }
+}
+.button-login::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+.button-login::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+.button-login:hover {
+    color: white;
+  }
+  
+  .button-login:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
+  
+  .button-login:hover::before {
+    top: -30px;
+    left: -30px;
+  }
 
 /* .button-login:hover {
     background-color: #128625;
@@ -60,6 +138,7 @@
 }
 
 .button-login:disabled {
+    
     background-color: #ccc; /* Cor de fundo quando o botão está desativado */
     color: #666; /* Cor do texto quando o botão está desativado */
 }
@@ -67,4 +146,9 @@
 .button-login:enabled{
     background-color: #128625; /* Cor de fundo quando o botão está desativado */
     color: #f0f0f0;
+}
+.button-forgot-password a{
+    
+    color : #272424;    
+    text-decoration-line: none;
 }
