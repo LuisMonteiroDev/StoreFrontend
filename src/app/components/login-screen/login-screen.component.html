@@ -12,33 +12,77 @@
       <div>
         <img src="/assets/logo.png" alt="logo" id="logomarca">
       </div>
+
       <div>
         <h5 class="login-text">NOVADATA</h5>
       </div>
+
       <br>
-        <div class="form-fields">
-          <label for="username">Email</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu email aqui!" required>
-          <br>
-          <br>
-          <label for="password">Senha</label>
-          <input type="password" id="password" name="password" placeholder="Digite sua senha aqui!" required>
-        </div>
+
+      <div class="form-fields">
+        <label for="username">Email:</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Email"
+            required
+        >
         <br>
         <br>
-        <div>
-          <button type="submit" class="button-login">
-            <strong class="button-text"><a href="../home/home.component.html"><span>SIGN IN</span></a></strong>
-          </button>
-        </div> 
-       
-        <br>
-        <div>
-          <button type="submit" class="button-forgot-password">
-            <strong class="button-text"><a href="../home/home.component.html"><span>Forgot password?</span></a></strong>
-          </button>
-        </div>
-        <br>
+        <label for="password">Senha:</label>
+        <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Senha"
+            required
+        >
+      </div>
+
+      <br>
+      <br>
+
+      <div>
+        <button type="submit" class="button-login" id="signIn">
+          <strong class="button-text">
+              <span>
+                SIGN IN
+              </span>
+          </strong>
+        </button>
+      </div> 
+      
+      <br>
+      <br>
+
     </form>
+    <br>
+
+    <div>
+      <button type="submit" class="button-forgot-password" id="forgotPassword">
+        <strong class="button-text">
+          <span class="forgot-password">
+            <a href="../forgot-password/forgot-password.component.html">
+              Forgot password?
+            </a>
+          </span>
+        </strong>
+      </button>
+    </div>
+
+    <!-- <script>
+      document.getElementById('signIn').addEventListener('click', function() {
+          window.location.href = '../../components/home/home.component.html'; // Supondo que 'home.html' seja o caminho para a tela home
+      });
+    </script> -->
+
+    <script>
+      document.getElementById('forgotPassword').addEventListener('click', function() {
+        document.getElementById('email').removeAttribute('required');
+        document.getElementById('password').removeAttribute('required');
+      });
+    </script>
+
 </body>
 </html>
