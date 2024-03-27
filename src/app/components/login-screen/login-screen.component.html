@@ -61,13 +61,13 @@
 
     <div>
       <button type="submit" class="button-forgot-password" id="forgotPassword">
-        <strong class="button-text">
-          <span class="forgot-password">
-            <a href="../forgot-password/forgot-password.component.html">
+        <a href="../forgot-password/forgot-password.component.html" routerLink="/forgot-password" routerLinkActive="active" ariaCurrentWhenActive="page">
+          <strong class="button-text">
+            <span class="forgot-password">
               Forgot password?
-            </a>
-          </span>
-        </strong>
+            </span>
+          </strong>
+        </a>
       </button>
     </div>
 
@@ -83,6 +83,8 @@
         document.getElementById('password').removeAttribute('required');
       });
     </script>
-
+    
 </body>
 </html>
+
+<router-outlet></router-outlet>
