@@ -5,7 +5,10 @@ import { LoginScreenComponent } from './components/login-screen/login-screen.com
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginScreenComponent],
+  imports: [
+    RouterOutlet, 
+    LoginScreenComponent, 
+  ],
   templateUrl: './app.component.html',
   // template: '<h1>Hello World</h1>',
   styleUrl: './app.component.scss'
